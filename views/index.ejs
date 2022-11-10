@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Set Result</title>
+</head>
+<body>
+    <h1>Predictions</h1>
+    <ol>
+        <%if(info.skincolor !== 'none'){%>
+         <li>Skin-colour: <%=info.skincolor%></li>
+        <%}%>
+        <%if(info.hat !== 'none'){%>
+         <li>Hat: <%=info.hat%></li>
+        <%}%>
+        <%if(info.glasses !== 'none'){%>
+            <li>Glasses: <%=info.glasses%></li>
+        <%}%>
+        <%if(info.eye !== 'none'){%>
+            <li>Eye: <%=info.eye%></li>
+        <%}%>
+        <%if(info.hair !== 'none'){%>
+            <li>Hair: <%=info.hair%></li>
+        <%}%>
+        <%if(info.misc !== 'none'){%>
+            <li>Miscellaneous: <%=info.misc%></li>
+        <%}%>
+    </ol>
+    <img src="https://avatars.dicebear.com/api/croodles/:seed.svg?face[]=variant04&eyes[]=variant07&size=500&backgroundColor=wheatwhite" alt="croodle">
+</body>
+</html>
