@@ -6,6 +6,7 @@ app.use(express.static(__dirname + '/public'));
 app.set("view engine", "ejs");
 
 app.get('/',(req,res)=>{
+    res.json({message:'temp'})
 });
 
 app.get('/skincolor=:skincolor&hat=:hat&glasses=:glasses&eye=:eye&misc=:misc&hair=:hair',(req,res)=>{
