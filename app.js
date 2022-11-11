@@ -9,7 +9,7 @@ app.get('/',(req,res)=>{
     res.json({message:'temp'})
 });
 
-app.get('/skincolor=:skincolor&hat=:hat&glasses=:glasses&eye=:eye&misc=:misc&hair=:hair',(req,res)=>{
+app.get('/name=:name&skincolor=:skincolor&hat=:hat&glasses=:glasses&eye=:eye&misc=:misc&hair=:hair',(req,res)=>{
     res.render('index.ejs',{info:req.params});
 });
 
