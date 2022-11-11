@@ -10,6 +10,13 @@ app.get('/',(req,res)=>{
 });
 
 app.get('/name=:name&skincolor=:skincolor&hat=:hat&glasses=:glasses&eye=:eye&misc=:misc&hair=:hair',(req,res)=>{
+    req.params.hair = req.params.hair.toLowerCase();
+    req.params.name = req.params.name.toLowerCase();
+    req.params.skincolour = req.params.hair.toLowerCase();
+    req.params.glasses = req.params.name.toLowerCase();
+    req.params.eye = req.params.hair.toLowerCase();
+    req.params.misc = req.params.name.toLowerCase();
+    console.log(req.params);
     res.render('index.ejs',{info:req.params});
 });
 
