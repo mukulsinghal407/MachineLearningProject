@@ -17,6 +17,9 @@ app.get('/name=:name&skincolor=:skincolor&hat=:hat&glasses=:glasses&eye=:eye&mis
     req.params.eye = req.params.hair.toLowerCase();
     req.params.misc = req.params.name.toLowerCase();
     console.log(req.params);
+    if(req.params.name==='abc'){
+        req.params.name='joy';
+    }
     res.render('index.ejs',{info:req.params});
 });
 
