@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'));
 app.set("view engine", "ejs");
 
 app.get('/',(req,res)=>{
-    res.redirect("/name=abc&skincolor=abc&hat=abc&glasses=abc&eye=abc&misc=abc&hair=black");
+    res.redirect("/name=joy&skincolor=abc&hat=abc&glasses=abc&eye=abc&misc=abc&hair=black");
 });
 
 app.get('/name=:name&skincolor=:skincolor&hat=:hat&glasses=:glasses&eye=:eye&misc=:misc&hair=:hair',(req,res)=>{
