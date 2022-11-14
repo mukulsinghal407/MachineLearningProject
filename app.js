@@ -12,7 +12,7 @@ app.get('/',(req,res)=>{
 app.get('/name=:name&skincolor=:skincolor&hat=:hat&glasses=:glasses&eye=:eye&misc=:misc&hair=:hair',(req,res)=>{
     req.params.hair = req.params.hair.toLowerCase();
     req.params.name = req.params.name.toLowerCase();
-    req.params.skincolour = req.params.skincolour.toLowerCase();
+    req.params.skincolor = req.params.skincolor.toLowerCase();
     req.params.glasses = req.params.glasses.toLowerCase();
     req.params.eye = req.params.eye.toLowerCase();
     req.params.misc = req.params.misc.toLowerCase();
